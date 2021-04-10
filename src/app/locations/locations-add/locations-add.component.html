@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Add location</h6>
+
+        <div class="media text-muted pt-3">
+            <form
+                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+            >
+                <div class="form-group">
+                    <label>User</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        placeholder="User id (example: 3)"
+                        [(ngModel)]="location.userId"
+                        name="userId"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label>Longitude</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Longitude (example: 163.4972)"
+                        [(ngModel)]="location.longitude"
+                        name="longitude"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label>Latitude</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Latitude (example: -88.9289)"
+                        [(ngModel)]="location.latitude"
+                        name="latitude"
+                        required
+                    />
+                </div>
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-sm"
+                    (click)="add()"
+                >
+                    Add
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

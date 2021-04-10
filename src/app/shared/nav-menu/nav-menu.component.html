@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['/home']">Hide'N'Sneak</a>
+</nav>
+
+<div class="nav-scroller bg-white box-shadow">
+    <nav class="nav nav-underline">
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
+            Home page
+        </a>
+        <a class="nav-link" [routerLink]="['/users']" routerLinkActive="active">
+            Users
+        </a>
+        <a
+            class="nav-link"
+            [routerLink]="['/locations']"
+            routerLinkActive="active"
+        >
+            Locations
+            <span class="badge badge-pill bg-light align-text-bottom">27</span>
+        </a>
+    </nav>
+</div>
